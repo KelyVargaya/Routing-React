@@ -75,23 +75,109 @@ class Teachers extends React.Component {
 class Repos extends React.Component {
 render() {
 		const {route} = this.props;
+
+		let HTMLrepos = [{
+			title: "HTML FORMS",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non quia, nulla dolorem reprehenderit laboriosam officiis nemo provident odit, aspernatur animi! Accusantium iste nobis neque sit minus dicta, quisquam magnam.",
+			img_html: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png",
+			
+		},
+		{
+			title: "HTML FORMS",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non quia, nulla dolorem reprehenderit laboriosam officiis nemo provident odit, aspernatur animi! Accusantium iste nobis neque sit minus dicta, quisquam magnam.",
+			img_html: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png",
+			
+		},
+		
+		{
+			title: "HTML FORMS",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non quia, nulla dolorem reprehenderit laboriosam officiis nemo provident odit, aspernatur animi! Accusantium iste nobis neque sit minus dicta, quisquam magnam.",
+			img_html: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png",
+			
+		}
+		];
+
+		let CSSrepos = [{
+			title: "CSS Basic",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non quia, nulla dolorem reprehenderit laboriosam officiis nemo provident odit, aspernatur animi! Accusantium iste nobis neque sit minus dicta, quisquam magnam.",
+			img_css: "http://www.freelancer.com/static/css/images/logo.jpg",
+			
+		},
+		{
+			title: "CSS Basic",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non quia, nulla dolorem reprehenderit laboriosam officiis nemo provident odit, aspernatur animi! Accusantium iste nobis neque sit minus dicta, quisquam magnam.",
+			img_css: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png",
+			
+		},
+		
+		{
+			title: "CSS Basic",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non quia, nulla dolorem reprehenderit laboriosam officiis nemo provident odit, aspernatur animi! Accusantium iste nobis neque sit minus dicta, quisquam magnam.",
+			img_css: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png",
+			
+		}
+		];
+
+		let JSrepos = [{
+			title: "JAVASCRIPT Basic",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non quia, nulla dolorem reprehenderit laboriosam officiis nemo provident odit, aspernatur animi! Accusantium iste nobis neque sit minus dicta, quisquam magnam.",
+			img_js: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png",
+			
+		},
+		{
+			title: "JAVASCRIPT Basic",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non quia, nulla dolorem reprehenderit laboriosam officiis nemo provident odit, aspernatur animi! Accusantium iste nobis neque sit minus dicta, quisquam magnam.",
+			img_js: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png",
+			
+		},
+		
+		{
+			title: "JAVASCRIPT Basic",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non quia, nulla dolorem reprehenderit laboriosam officiis nemo provident odit, aspernatur animi! Accusantium iste nobis neque sit minus dicta, quisquam magnam.",
+			img_js: "https://achievement-images.teamtreehouse.com/badges_JavaScript_Basics_Stage5.png",
+		
+		}
+		];
+
+		
 		let CurrentList = null;
+
 		switch (route) {
 
 			case 'css':
-				CurrentList = ['How to Make a CSS', 'HTML CSS'].map( (item, index) => {
-					return <li key = {index}> {item} </li>
+				CurrentList = CSSrepos.map( (item, index) => {
+					return <li key = {index} className="course media-group"> 
+								<img className= "course-img" src={item.img_css} alt=""/>
+								<div>
+									<h2>{item.title}</h2>
+									<p>{item.description} </p>
+								</div>
+						 </li>
 				});
 				break;
 			case 'javascript':
-				CurrentList = ['How to Make a JS', 'HTML JS'].map( (item, index) => {
-					return <div><li key = {index}> {item} </li></div>
+				CurrentList = JSrepos.map( (item, index) => {
+					return <div>
+							<li key = {index} className="course media-group">
+								<img className= "course-img" src={item.img_js} alt=""/>
+								<div>
+									<h2>{item.title}</h2>
+									<p>{item.description} </p>
+								</div>
+						 	</li>
+						 </div>
           
 				});
 				break;
 			default: //'html'
-				CurrentList = ['How to Make a Website', 'HTML Forms'].map( (item, index) => {
-					return <li key = {index}> {item} </li>
+				CurrentList = HTMLrepos.map( (item, index) => {
+					return <li key = {index} className="course media-group"> 
+								<img className= "course-img" src={item.img_html} alt=""/>
+								<div>
+									<h2>{item.title}</h2>
+									<p>{item.description} </p>
+								</div>
+						 </li>
 				});
 				break;
 		}
@@ -100,9 +186,8 @@ render() {
 			<div className="main-content courses">
 				<div className="course-header group">
 					<h2>REPOS</h2>
-          
 					<ul className="course-nav">
-						<li><a href='#/repos/html'>HTML</a></li>
+						<li><a href='#/repos/html'className="active">HTML</a></li>
 						<li><a href='#/repos/css'>CSS</a></li>
 						<li><a href='#/repos/javascript'>JavaScript</a></li>
 					</ul>
@@ -110,6 +195,7 @@ render() {
 					<ul>
 						{CurrentList}
 					</ul>
+					
 				</div>
 
 				{/* Write routes here... */}
@@ -167,7 +253,8 @@ class App extends React.Component {
 		}
 		return (
          <div >
-            <header><span className="icn-logo"> ► ► </span>
+			 
+            <header><span className="icn-logo"><i className="material-icons">code</i> </span>
                <ul className="main-nav">
                   <li><a href="#">Home</a></li>
                   <li><a href="#/about">About</a></li>
