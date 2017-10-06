@@ -42,28 +42,28 @@ class Teachers extends React.Component {
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ad harum tenetur officiis quisquam eius maiores animi hic ipsum impedit perferendis nesciunt, rerum earum odit fugiat laborum numquam eveniet placeat?</p>
           </li>
           <li className="teacher">
-            <img className="teacher-img" src="https://www.creativosonline.org/blog/wp-content/uploads/2016/06/freelance-gif.png" alt=""/>
-            <h2>Teacher 1</h2>
+            <img className="teacher-img" src="https://blog.getmagic.com/wp-content/uploads/2017/05/freelancer-hire-1.jpg" alt=""/>
+            <h2>Teacher 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ad harum tenetur officiis quisquam eius maiores animi hic ipsum impedit perferendis nesciunt, rerum earum odit fugiat laborum numquam eveniet placeat?</p>
+          </li>
+          <li className="teacher">
+            <img className="teacher-img" src="https://www.researchsnipers.com/wp-content/uploads/2017/02/How-to-Become-a-Successful-Pakistani-Freelancer.jpg" alt=""/>
+            <h2>Teacher 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ad harum tenetur officiis quisquam eius maiores animi hic ipsum impedit perferendis nesciunt, rerum earum odit fugiat laborum numquam eveniet placeat?</p>
+          </li>
+          <li className="teacher">
+            <img className="teacher-img" src="https://www.researchsnipers.com/wp-content/uploads/2017/02/How-to-Become-a-Successful-Pakistani-Freelancer.jpg" alt=""/>
+            <h2>Teacher 4</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ad harum tenetur officiis quisquam eius maiores animi hic ipsum impedit perferendis nesciunt, rerum earum odit fugiat laborum numquam eveniet placeat?</p>
           </li>
           <li className="teacher">
             <img className="teacher-img" src="https://www.creativosonline.org/blog/wp-content/uploads/2016/06/freelance-gif.png" alt=""/>
-            <h2>Teacher 1</h2>
+            <h2>Teacher 5</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ad harum tenetur officiis quisquam eius maiores animi hic ipsum impedit perferendis nesciunt, rerum earum odit fugiat laborum numquam eveniet placeat?</p>
           </li>
           <li className="teacher">
             <img className="teacher-img" src="https://www.creativosonline.org/blog/wp-content/uploads/2016/06/freelance-gif.png" alt=""/>
-            <h2>Teacher 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ad harum tenetur officiis quisquam eius maiores animi hic ipsum impedit perferendis nesciunt, rerum earum odit fugiat laborum numquam eveniet placeat?</p>
-          </li>
-          <li className="teacher">
-            <img className="teacher-img" src="https://www.creativosonline.org/blog/wp-content/uploads/2016/06/freelance-gif.png" alt=""/>
-            <h2>Teacher 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ad harum tenetur officiis quisquam eius maiores animi hic ipsum impedit perferendis nesciunt, rerum earum odit fugiat laborum numquam eveniet placeat?</p>
-          </li>
-          <li className="teacher">
-            <img className="teacher-img" src="https://www.creativosonline.org/blog/wp-content/uploads/2016/06/freelance-gif.png" alt=""/>
-            <h2>Teacher 1</h2>
+            <h2>Teacher 6</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ad harum tenetur officiis quisquam eius maiores animi hic ipsum impedit perferendis nesciunt, rerum earum odit fugiat laborum numquam eveniet placeat?</p>
           </li>
         </ul>
@@ -167,7 +167,7 @@ class App extends React.Component {
 		}
 		return (
          <div >
-            <header><span className="icn-logo">askjd</span>
+            <header><span className="icn-logo"> ► ► </span>
                <ul className="main-nav">
                   <li><a href="#">Home</a></li>
                   <li><a href="#/about">About</a></li>

@@ -2,7 +2,7 @@
 
 body {
     color: #576366;
-    background: #5fcf80;
+    background: #33546d;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -44,12 +44,13 @@ header {
 }
 
 .menu a:hover{
-  background-color: #13826b;
+  background-color: #2cb0b7;
   color:#252626;
  
 }
 a:hover{
   text-decoration: none;
+   background-color: #2cb0b7;
 }
 
 h1, h2, ul {
@@ -125,7 +126,6 @@ button {
 }
 
 /* MAIN NAV -------- */
-@media (min-width: 769px){
 .main-nav a {
     font-size: .95em;
     color: #222;
@@ -140,7 +140,7 @@ button {
 
 .main-nav a:hover, .main-nav .active {
     color: #fff;
-    background: #3b80d1;
+    background: #2cb0b7;
 }
 
 /* COURSE NAV -------- */
@@ -238,7 +238,7 @@ button {
     }
 
     .home a {
-        border-color: #3b80d1;
+        border-color: #2cb0b7;
     }
 
     .media img, .media > div, .teacher {
@@ -253,6 +253,8 @@ button {
     .teacher {
         width: 48.73%;
         margin-bottom: 1.5em;
+        border-radius: 10px;
+        background: #edeff0;
     }
 
     .teacher + .teacher {
@@ -264,10 +266,15 @@ button {
         margin-left: 0;
     }
 
+    .teacher p{
+        text-align: justify;
+
+    }
     /* MAIN NAV -------- */
     .icn-logo {
         margin-right: auto;
         padding: 0 2em;
+        line-height: 3;
     }
 
     header, .main-nav {
