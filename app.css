@@ -19,11 +19,22 @@ body {
     overflow: hidden;
 }
 
+#repos{
+    background: #edeff0;
+    border-radius: 10px;
+}
+
+#contenidos{
+    margin-top: 10px;
+}
+
 header {
     background: #edeff0;
     margin-bottom: 2em;
 }
-
+.header-Courses{
+    margin-bottom: 5px;
+}
 .main-content {
     padding: 1em 2em;
 }
@@ -153,6 +164,9 @@ button {
     margin-left: .6em;
 }
 
+.course-nav {
+    float: right;
+}
 
 .course-nav a {
     text-transform: uppercase;

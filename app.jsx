@@ -146,19 +146,21 @@ render() {
 
 			case 'css':
 				CurrentList = CSSrepos.map( (item, index) => {
-					return <li key = {index} className="course media-group"> 
-								<img className= "course-img" src={item.img_css} alt=""/>
-								<div>
+					return <div >
+							<li key = {index} className="course media-group" id="repos">
+									<img className= "course-img" src={item.img_css} alt=""/>
+								<div >
 									<h2>{item.title}</h2>
 									<p>{item.description} </p>
 								</div>
-						 </li>
+						 	</li>
+						 </div>
 				});
 				break;
 			case 'javascript':
 				CurrentList = JSrepos.map( (item, index) => {
 					return <div>
-							<li key = {index} className="course media-group">
+							<li key = {index} className="course media-group" id="repos">
 								<img className= "course-img" src={item.img_js} alt=""/>
 								<div>
 									<h2>{item.title}</h2>
@@ -171,10 +173,10 @@ render() {
 				break;
 			default: //'html'
 				CurrentList = HTMLrepos.map( (item, index) => {
-					return <li key = {index} className="course media-group"> 
+					return <li key = {index} className="course media-group" id="repos"> 
 								<img className= "course-img" src={item.img_html} alt=""/>
 								<div>
-									<h2>{item.title}</h2>
+									<h2>{item.title}</h2><br/><br/><br/>
 									<p>{item.description} </p>
 								</div>
 						 </li>
@@ -184,19 +186,20 @@ render() {
 		return (
 
 			<div className="main-content courses">
-				<div className="course-header group">
-					<h2>REPOS</h2>
+				<div className="course-header group">							
+					<h2>Courses Available</h2>
 					<ul className="course-nav">
 						<li><a href='#/repos/html'className="active">HTML</a></li>
 						<li><a href='#/repos/css'>CSS</a></li>
 						<li><a href='#/repos/javascript'>JavaScript</a></li>
 					</ul>
-
-					<ul>
-						{CurrentList}
-					</ul>
-					
-				</div>
+					</div>
+					<div id="contenidos">
+						<ul>
+							{CurrentList}
+						</ul>
+					</div>
+				
 
 				{/* Write routes here... */}
 			</div>
